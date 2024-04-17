@@ -6,5 +6,6 @@ module.exports = router;
 router.get('/all', polygonController.readAll);
 router.post('/create', polygonController.create); 
 router.post('/read', polygonController.read);
-router.post('/coordinate', polygonController.updateCoordinates);
-router.post('/status', polygonController.updateStatus);
+router.put('/update', polygonController.update);
+router.put('/coordinate', polygonController.updateCoordinates);
+router.put('/status', polygonController.updateStatus);
